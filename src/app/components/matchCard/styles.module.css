@@ -1,0 +1,146 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  background-color: #0B0E12;
+}
+
+.containerPreview {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 36px;
+  border-radius: 4px;
+}
+
+.matchScore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.teamName {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.score {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  padding: 6px 2px;
+  height: 27px;
+  width: 92px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 12px;
+}
+
+.matchDetails {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  padding: 12px;
+}
+
+.teamDetails {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.playersList {
+  display: flex;
+  width: 100%;
+  background-color: #43AD28;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.player {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 8px 24px;
+  align-items: center;
+  background-color: #101318;
+}
+
+.userName {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+}
+.killsContainer{
+  display: flex;
+  flex-direction: row;
+}
+.kills {
+  color: #FAFAFA66;
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.teamInfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 24px;
+  background-color: #101318;
+}
+
+.infoCard {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.placeholder {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 14px;
+  color: #FAFAFA66;
+}
+
+.teamInfoData {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 16px;
+  color: #F2F6F6;
+}
+.divider {
+  width: 1px;
+  height: 16px;
+  background-color: #141A21;
+}
+.finished {
+  background-color: #EB0237;
+}
+
+.ongoing {
+  background-color: #43AD28;
+}
+
+.scheduled {
+  background-color: #EB6402;
+}
