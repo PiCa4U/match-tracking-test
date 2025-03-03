@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import { ArrowDownIcon } from "../../../../../public/icons";
+import { ArrowDownIcon } from "../../assets/icons";
 import styles from "./styles.module.css";
 
 const statuses = ["Все статусы", "Live", "Finished", "Match preparing"];
@@ -22,7 +22,7 @@ export const Select = ({ selected, onChange }: SelectProps) => {
     if (containerRef.current) {
       const rect = containerRef.current.getBoundingClientRect();
       setWidth(rect.width);
-      setTop(rect.height + rect.top + 8);
+      setTop(rect.height + 8);
     }
   }, [isOpen]);
 
@@ -48,7 +48,7 @@ export const Select = ({ selected, onChange }: SelectProps) => {
   }, [isOpen]);
 
   return (
-    <div className="relative">
+    <div className={styles.mainContainer}>
       <div
         ref={containerRef}
         className={styles.container}

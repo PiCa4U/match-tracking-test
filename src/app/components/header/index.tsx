@@ -1,8 +1,8 @@
 "use client"
 
 import styles from "./styles.module.css"
-import {ErrorIcon, RefreshIcon} from "../../../../public/icons";
-import {useMatches} from "@/app/hooks/useMatches";
+import {ErrorIcon, RefreshIcon} from "../../shared/assets/icons";
+import {useMatches} from "@/app/shared/hooks/useMatches";
 import {Select} from "@/app/shared/components/select";
 
 type HeaderProps = {
@@ -10,12 +10,12 @@ type HeaderProps = {
   onStatusChange: (selectedStatus: string) => void
 }
 export const Header = ({ selectedStatus, onStatusChange }: HeaderProps) => {
-  const { data: matches, error, isLoading, refetch } = useMatches();
+  const { error, refetch } = useMatches();
   return (
     <div className={styles.container}>
       <div className={styles.sortContainer}>
-        <div>Match tracker</div>
-          <Select selected={selectedStatus} onChange={onStatusChange} />
+        <div className={styles.header}>Match Tracker</div>
+        <Select selected={selectedStatus} onChange={onStatusChange} />
       </div>
       <div className={styles.errorContainer}>
         {error && <div className={styles.error}>

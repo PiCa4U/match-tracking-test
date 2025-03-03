@@ -1,0 +1,78 @@
+.teamDetails {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.playersList {
+     display: flex;
+     width: 100%;
+     flex-direction: row;
+     gap: 8px;
+ }
+
+@media screen and (max-width: 450px) {
+  .playersList {
+    flex-wrap: wrap
+  }
+}
+.teamStats {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: clamp(7px, 0.5vw, 14px) clamp(12px, 0.5vw, 24px);
+    background-color: #101318;
+}
+
+.teamInfo {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: clamp(7px, 0.5vw, 14px) clamp(12px, 0.5vw, 24px);
+    background-color: #101318;
+}
+
+@media screen and (max-width: 1400px) {
+  .teamInfo {
+      flex-direction: column;
+  }
+}
+.userName {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: clamp(14px, 0.5vw, 16px);
+}
+
+.avatar {
+    width: clamp(32px, 2vw, 36px);
+    height: clamp(32px, 2vw, 36px);
+}
+
+.infoCard {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.placeholder {
+    font-weight: 500;
+    font-size: clamp(12px, 0.5vw, 14px);
+    color: #FAFAFA66;
+}
+
+.teamInfoData {
+    font-weight: 600;
+    font-size: clamp(14px, 0.5vw, 16px);
+    color: #F2F6F6;
+}
