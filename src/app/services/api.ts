@@ -7,6 +7,6 @@ export const fetchMatches = async () => {
     const { data } = await axios.get(API_URL);
     return data.data.matches;
   } catch (error) {
-    throw new Error("Ошибка: не удалось загрузить информацию");
+    console.error(error)
   }
 };
